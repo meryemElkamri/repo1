@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form2</title>
+    <style>
+        fieldset{
+            border-color: red; margin-left:200px ; margin-right:500px ;
+        }
+        legend {
+            color: red;
+        }
+        input[type="submit"]{
+            margin-left: 200px;
+        }
+
+
+    </style>
+</head>
+<body>
+<form method="post"action="traitment.php">
+    <fieldset>
+        <legend>Apropos des css:</legend>
+        
+            <p>savez vous ce que vuet dire css?:</p><br/>
+            <input type="radio"name="oui" checked>oui
+            <input type="radio"name="nom">Nom<br/>
+            si oui;les utilises-vous putot:<br/>
+            <label for="toujours"></label>
+		<select name="toujours" id="toujours" > 
+				<option value="toujours">toujour</option>
+				<option value="quelquefois">quelquefois</option>
+                <option value="non">non</option>
+         </select>
+  
+            </fieldset>
+   <fieldset>
+       <legend> vos coordonnées</legend>
+       <label for="email"> votre email:</label> <br/>
+            <input type="email"placeholder="email"id="mail"> <br/>
+        <label for="commentaire">vos commentaires:</label>   <br/>  
+        <textarea cols="21" rows="5">
+        </textarea>
+        
+        </fieldset><br/>
+        <input type="submit" value="envoyer">
+<input type="reset" value="annuler">
+</form>
+
+
+
+
+</body>
+    
+</body>
+</html>
